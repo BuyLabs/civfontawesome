@@ -50,13 +50,13 @@ end
 end)
 
 
- RegisterCommand('tweet', function(source, args, rawCommand)
+RegisterCommand('tweet', function(source, args, rawCommand)
     local playerName = GetPlayerName(source)
     local msg = rawCommand:sub(6)
     local name = getIdentity(source)
     fal = name.firstname .. " " .. name.lastname
     TriggerClientEvent('chat:addMessage', -1, {
-        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); border-radius: 3px;"><i class="fab fa-twitter"></i> @{0}:<br> {1}</div>',
+        template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); color: white; border-radius: 3px;"><i class="fab fa-twitter "style="font-size:15px;color:white"> <font color="#FFFF00">@{0} Tweeted:</font> &ensp; <font color="lime">{1}</font></div>',
         args = { fal, msg }
     })
 end, false)
@@ -67,7 +67,7 @@ end, false)
     local name = getIdentity(source)
     fal = name.firstname .. " " .. name.lastname
     TriggerClientEvent('chat:addMessage', -1, {
-        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); border-radius: 3px;"><i class="fab fa-twitter"></i> @Anonymous:<br> {1}</div>',
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); color: white; border-radius: 3px;"><i class="fab fa-twitter "style="font-size:15px;color:white"> <font color="#FFFF00">@Anonymous Tweeted:</font> &ensp; <font color="lime">{1}</font></div>',
         args = { fal, msg }
     })
 end, false)
@@ -78,7 +78,7 @@ end, false)
     local name = getIdentity(source)
     fal = name.firstname .. " " .. name.lastname
     TriggerClientEvent('chat:addMessage', -1, {
-        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(214, 168, 0, 1); border-radius: 3px;"><i class="fas fa-ad"></i> Advertisement:<br> {1}<br></div>',
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(214, 168, 0, 1); border-radius: 3px;"><i class="fas fa-ad"style="font-size:20px;color:black"></i> <b><font color="red">Advertisement:</font></b> <b><i><font color="white">{1}</font></i></b></div>',
         args = { fal, msg }
     })
 end, false)
@@ -89,11 +89,21 @@ end, false)
     local name = getIdentity(source)
 
     TriggerClientEvent('chat:addMessage', -1, {
-        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(41, 41, 41, 0.6); border-radius: 3px;"><i class="fas fa-globe"></i> {0}:<br> {1}</div>',
+	    template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px;"><i class="fas fa-comment-slash"style="font-size:15px;color:lime"></i>&ensp;;<font color="FFFF00">{0}:</font>&ensp;<font color="lime">{1}</font></div>',
         args = { playerName, msg }
     })
 end, false)
 
+RegisterCommand('me', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(3)
+    local name = getIdentity(source)
+    fal = name.firstname .. " " .. name.lastname
+    TriggerClientEvent('chat:addMessage', -1, {
+        template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(127, 0, 225, 0.6); border-radius: 3px;"><i class="fas fa-comment-dots"style="font-size:15px;color:lime"></i>&ensp;<i><b><font size="3" color="#FFFF00">{0}:</font></b></i>&ensp;<b><i><font color="lime">{1}</font></i></b></div>',
+        args = { fal, msg }
+    })
+end, false)
 
 function stringsplit(inputstr, sep)
 	if sep == nil then
