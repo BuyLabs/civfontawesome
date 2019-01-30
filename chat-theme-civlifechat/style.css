@@ -5,7 +5,7 @@
 .color-3{color: #ffbb33;}
 .color-4{color: #0099cc;}
 .color-5{color: #33b5e5;}
-.color-6{color: #aa66cc;}
+.color-6{color: #FFFF00;}
 .color-8{color: #cc0000;}
 .color-9{color: #cc0068;}
     src: url("../BarlowCondensed.ttf");
@@ -29,7 +29,7 @@ em {
   font-family: 'Barlow Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: orange;
   background-color: transparent;
 }
 
@@ -38,7 +38,7 @@ em {
   left: 15px;
   width: 38%;
   height: 530px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(207, 227, 114, 1.0);
   -webkit-animation-duration: 2s;
 }
 
@@ -48,7 +48,7 @@ em {
   position: relative;
   height: 95%;
   font-size: 1.0rem;
-
+  color: #FFFF00;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -68,7 +68,7 @@ em {
 .prefix {
   position: absolute;
   margin-top: 2px;
-  left: -10px;
+  left: -20px;
 }
 
 textarea {
@@ -76,7 +76,7 @@ textarea {
   display: block;
   box-sizing: border-box;
   padding: 5px;
-  color: white;
+  color: #FFFF00;
   background-color: rgba(207, 227, 114, 0);
   width: 50%;
   border-width: 0;
@@ -96,7 +96,8 @@ textarea:focus, input:focus {
 {
   height: 10%;
   width: 90%;
-  background: #ffbb33;
+  color: White;
+  background: #FFFFFF;
   border-radius: 5px;
   color: #0000;
 }
@@ -113,17 +114,17 @@ textarea:focus, input:focus {
   padding-left: 27px;
   font-size: 0.9rem;
   box-sizing: border-box;
-  color: white;
+  color: #FFFF00;
   background-color: rgba(207, 227, 114, 0);
   width: 100%;
 }
 
 .help {
-  color: #b0bbbd;
+  color: #FFFFFF;
 }
 
 .disabled {
-  color: #b0bbbd;
+  color: #FFFFFF;
 }
 
 .suggestion {
