@@ -22,7 +22,7 @@ You need to start the resources in this order
 - Fixed /me commands
 - Color can now be change for Font Icon, RP Names and Text.
 
-# o Do List
+# To Do List
 - Adding more commands such as 911 and so on. 
 
 # Installation guide
@@ -38,3 +38,7 @@ You need to start the resources in this order
 -  start esx_rpchat
 5- Clear your server cache.
 6- start server
+
+# Screenshots
+<a href="https://imgur.com/VEIs1zO"><img src="https://i.imgur.com/VEIs1zO.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/tUD18Nz"><img src="https://i.imgur.com/tUD18Nz.jpg" title="source: imgur.com" /></a>
