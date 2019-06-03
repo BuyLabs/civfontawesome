@@ -105,6 +105,39 @@ RegisterCommand('me', function(source, args, rawCommand)
     })
 end, false)
 
+RegisterCommand('911P', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(5)
+    local name = getIdentity(source)
+
+    TriggerClientEvent('chat:addMessage', -1, {
+	    template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px;"><i class="fas fa-comment-slash"style="font-size:15px;color:lime"></i>&ensp;;<font color="FFFF00">{0}:</font>&ensp;<font color="lime">{1}</font></div>',
+        args = { playerName, msg }
+    })
+end, false)
+
+RegisterCommand('911E', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(5)
+    local name = getIdentity(source)
+
+    TriggerClientEvent('chat:addMessage', -1, {
+	    template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px;"><i class="fas fa-comment-slash"style="font-size:15px;color:lime"></i>&ensp;;<font color="FFFF00">{0}:</font>&ensp;<font color="lime">{1}</font></div>',
+        args = { playerName, msg }
+    })
+end, false)
+
+RegisterCommand('911F', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(5)
+    local name = getIdentity(source)
+
+    TriggerClientEvent('chat:addMessage', -1, {
+	    template = '<div style="padding: 0.5vw;  margin: 0.5vw; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px;"><i class="fas fa-comment-slash"style="font-size:15px;color:lime"></i>&ensp;;<font color="FFFF00">{0}:</font>&ensp;<font color="lime">{1}</font></div>',
+        args = { playerName, msg }
+    })
+end, false)
+
 function stringsplit(inputstr, sep)
 	if sep == nil then
 		sep = "%s"
